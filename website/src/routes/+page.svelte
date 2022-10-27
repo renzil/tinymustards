@@ -1,12 +1,11 @@
 <script>
-	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Tiny Mustards</title>
+	<meta name="description" content="Tiny Mustards" />
 </svelte:head>
 
 <section>
@@ -18,14 +17,8 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit abb
+		Welcome to the Playschool App
 	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
 </section>
 
 <style>
