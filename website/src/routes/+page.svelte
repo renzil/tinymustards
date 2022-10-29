@@ -1,6 +1,13 @@
 <script>
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import { InlineCalendar } from 'svelte-calendar';
+	const theme = {
+		calendar: {
+			width: '600px',
+			shadow: '0px 0px 5px rgba(0, 0, 0, 0.25)'
+		}
+	};
 </script>
 
 <svelte:head>
@@ -19,6 +26,7 @@
 
 		Welcome to the Playschool App
 	</h1>
+	<InlineCalendar {theme} />
 </section>
 
 <style>
