@@ -3,51 +3,14 @@
 	import "../app.css";
 </script>
 
-<div class="app">
+<div class="app flex flex-col min-h-screen box-border">
 	<Header />
 
-	<main>
+	<main class="flex flex-1 flex-col p-4 w-full max-w-5xl mx-auto">
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://www.instagram.com/tinymustards/" target="_blank" rel="noreferrer">Tiny Mustards Instagram</a> to learn more.</p>
+	<footer class="flex flex-col justify-center items-center p-3 sm:py-3">
+		<p>visit <a class="font-bold" href="https://www.instagram.com/tinymustards/" target="_blank" rel="noreferrer">Tiny Mustards Instagram</a> to learn more.</p>
 	</footer>
 </div>
-
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
